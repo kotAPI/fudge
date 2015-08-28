@@ -9,8 +9,8 @@ body{
 
 .frow{
 	padding: 30px 20px 30px 20px;
-	
-		/*Makes sure padding/margin and shit are included in the box itself*/
+	word-wrap: break-word;
+	box-sizing:border-box;	/*Makes sure padding/margin and shit are included in the box itself*/
 }
 .frow:before, .frow:after{
 	content: " ";
@@ -21,29 +21,86 @@ body{
 	margin-bottom: 25px;
 }
 
-/* add box-sizing:border-box; to all columns or shit wont work.*/
+/* add box-sizing:border-box; to all columns or shit wont work.
+   word-wrap:break word must be set into all divs so the text doesnt fucking go out of the divs and disappear;
+
+*/
 
 .fcol-12{
-
+	padding: 20px;
 	width: 100%;
 	position: relative;
 	float:left;
+	box-sizing:border-box;	
+}
+.fcol-11{
+	padding: 20px;
 	box-sizing:border-box;
-	
+	width:91.666666666%;
+	position: relative;
+	float: left;
+	 /*IMPORTANT*/	
+}
+.fcol-10{
+	padding: 20px;
+	box-sizing:border-box;
+	width:83.333333%;
+	position: relative;
+	float: left;
+	 /*IMPORTANT*/	
+}
+.fcol-9{
+	padding: 20px;
+	box-sizing:border-box;
+	width:75%;
+	position: relative;
+	float: left;
+	 /*IMPORTANT*/	
+}
+.fcol-8{
+	padding: 20px;
+	box-sizing:border-box;
+	width:66.6666666%;
+	position: relative;
+	float: left;
+	 /*IMPORTANT*/	
+}
+.fcol-7{
+	padding: 20px;
+	box-sizing:border-box;
+	width:58.3333333%;
+	position: relative;
+	float: left;
+	 /*IMPORTANT*/	
 }
 .fcol-6{
+	padding: 20px;
 	box-sizing:border-box;
-	padding: 40px;
 	width:50%;
 	position: relative;
 	float: left;
-	
+	 /*IMPORTANT*/	
 }
 .fcol-3{
-
-	padding: 4px;
+	padding: 20px;
 	box-sizing:border-box;
 	width:25%;
+	position: relative;
+	float: left;
+}
+.fcol-2{
+
+	padding: 20px;
+	box-sizing:border-box;
+	width:16.6666667%;
+	position: relative;
+	float: left;
+}
+.fcol-1{
+
+	padding: 20px;
+	box-sizing:border-box;
+	width:8.3333%;
 	position: relative;
 	float: left;
 }
@@ -61,32 +118,10 @@ body{
 
 .f-text{
 	font-family: 'Roboto', sans-serif;
-	padding: 4px 4px 4px 4px;
 	font-size: 30px;
-	color: white;
+	color: black;
 
 }
-.f-button{
-	margin: 10px;
-	background: white;
-	padding: 4px 0px 4px 0px !important;
-	max-height:26px;
-	max-width:100px;
-	font-size: 20px;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	z-index: 2;
-	transition: box-shadow 0.25s;
-}
-.f-button:hover{
-	cursor: pointer;
-
-	-webkit-box-shadow: 2px 4px 1px 0px rgba(0,0,0,0.75);
-	   -moz-box-shadow: 2px 4px 1px 0px rgba(0,0,0,0.75);
-	        box-shadow: 2px 4px 1px 0px rgba(0,0,0,0.75);
-	transition: all 0.25s;
-}
-
 .fixed{     
 	position: fixed;
 	z-index: 4;
