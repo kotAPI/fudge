@@ -1,13 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+html{
+	box-sizing:border-box;
 
+}
 body{
 	margin:0px;
 	padding: 0px;
-
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+
 .frow{
+	border:1px solid white;
 	padding: 30px 20px 30px 20px;
 	word-wrap: break-word;
 	box-sizing:border-box;	/*Makes sure padding/margin and shit are included in the box itself*/
@@ -23,86 +34,84 @@ body{
 
 /* add box-sizing:border-box; to all columns or shit wont work.
    word-wrap:break word must be set into all divs so the text doesnt fucking go out of the divs and disappear;
-
 */
-
+/*border for debugging purposes only*/
 .fcol-12{
 	padding: 20px;
 	width: 100%;
 	position: relative;
 	float:left;
-	box-sizing:border-box;	
+	border:1px solid black;
+	
 }
 .fcol-11{
 	padding: 20px;
-	box-sizing:border-box;
 	width:91.666666666%;
 	position: relative;
 	float: left;
-	 /*IMPORTANT*/	
+	border:1px solid black;
+		
 }
 .fcol-10{
 	padding: 20px;
-	box-sizing:border-box;
 	width:83.333333%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 	 /*IMPORTANT*/	
 }
 .fcol-9{
 	padding: 20px;
-	box-sizing:border-box;
 	width:75%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 	 /*IMPORTANT*/	
 }
 .fcol-8{
 	padding: 20px;
-	box-sizing:border-box;
 	width:66.6666666%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 	 /*IMPORTANT*/	
 }
 .fcol-7{
 	padding: 20px;
-	box-sizing:border-box;
 	width:58.3333333%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 	 /*IMPORTANT*/	
 }
 .fcol-6{
 	padding: 20px;
-	box-sizing:border-box;
 	width:50%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 	 /*IMPORTANT*/	
 }
 .fcol-3{
 	padding: 20px;
-	box-sizing:border-box;
 	width:25%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 }
 .fcol-2{
-
 	padding: 20px;
-	box-sizing:border-box;
 	width:16.6666667%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 }
 .fcol-1{
-
 	padding: 20px;
-	box-sizing:border-box;
 	width:8.3333%;
 	position: relative;
 	float: left;
+	border:1px solid black;
 }
 
 .fcenter{
@@ -118,7 +127,7 @@ body{
 
 .f-text{
 	font-family: 'Roboto', sans-serif;
-	font-size: 30px;
+	font-size: 12px;
 	color: black;
 
 }
@@ -137,8 +146,6 @@ body{
 	-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.85);
 	   -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.85);
 	        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.85);
-	
-
 	
 }
 
@@ -1060,3 +1067,27 @@ body{
 	opacity: 0.1;
 }
 /* TRANSPARANCY CLASSES END*/
+
+
+.fbutton{
+	font-size: 22px;
+	font-weight: 700;
+	align:auto;
+	text-align: center;
+	padding:5px 5px 5px 5px;
+	width:150px;
+	height:40px;
+	outline:none;
+	background-color: white;
+	border:0 none;
+	margin: 10px 20px 10px 20px;
+	box-shadow: 0px 1px 1px black;
+	overflow:hidden;
+	cursor:default;
+	transition:all 0.1s ease-out;
+}
+
+.fbutton:hover{
+	box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+	transition: all 0.3s ease-in;
+}
